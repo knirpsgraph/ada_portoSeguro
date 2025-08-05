@@ -1,0 +1,47 @@
+1. Projektziel
+Das Ziel dieses Projekts ist die Entwicklung eines Machine-Learning-Modells, das vorhersagt, ob Kundinnen eines brasilianischen Autoversicherers Ansprüche auf Schadensregulierung erheben werden.
+
+1 Projektstand
+Bisher wurden die folgenden Schritte durchgeführt:
+
+Der Datensatz (ID 42742) wurde von der OpenML-Webseite heruntergeladen.
+
+Eine Funktion in src/data_loader.py ermöglicht das Laden des Datensatzes und speichert ihn zur Wiederverwendung in data/raw/.
+
+Das Jupyter-Notebook notebooks/01_eda.ipynb enthält eine erste explorative Datenanalyse (EDA).
+
+3. Projektstruktur
+Die Projektstruktur ist modular aufgebaut, um die Arbeit zu organisieren und die Zusammenarbeit zu erleichtern:
+
+src/: Beinhaltet Python-Skripte und Module (z. B. data_loader.py).
+
+data/: Speichert die Rohdaten (raw/) und die zukünftig verarbeiteten Daten (processed/). Dieser Ordner wird über .gitignore von der Versionskontrolle ausgeschlossen.
+
+notebooks/: Enthält Jupyter-Notebooks, die den Ablauf der Analyse und der Modellentwicklung dokumentieren.
+
+4. Starten des Projekts
+Um das Projekt zu starten, folge diesen Schritten:
+
+Klone das Repository.
+
+Richte die Conda-Umgebung ein, wie in der environment.yml-Datei beschrieben.
+
+Aktiviere die Umgebung (conda activate <name>).
+
+Öffne das erste Notebook (notebooks/01_eda.ipynb) und führe es aus. Der Datensatz wird automatisch heruntergeladen und gespeichert.
+
+5. Zusammenarbeit (Git-Workflow)
+Die Zusammenarbeit erfolgt über Git. Verwende den folgenden grundlegenden Workflow:
+
+Bevor du mit der Arbeit beginnst, aktualisiere deine lokale Kopie: git pull.
+
+Erstelle einen neuen Branch für deine Änderungen: git checkout -b <dein_branch_name>.
+
+Nachdem du deine Änderungen vorgenommen hast, füge sie zum Staging-Bereich hinzu: git add ..
+
+Erstelle einen Commit: git commit -m "Nachricht".
+
+Pushe deine Änderungen: git push -u origin <dein_branch_name>.
+
+Erstelle einen Pull Request auf GitHub, um deine Änderungen in den main-Branch zu integrieren.
+

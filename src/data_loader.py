@@ -2,7 +2,6 @@ import pandas as pd
 from sklearn.datasets import fetch_openml
 import os
 
-# Globale Variable, um den DataFrame zwischenzuspeichern
 _df = None
 
 
@@ -32,7 +31,6 @@ def load_and_save_data(cache=True):
         # Sicherstellen, dass das Verzeichnis existiert
         os.makedirs(data_dir, exist_ok=True)
 
-        # Speichern des Datensatzes
         df.to_csv(file_path, index=False)
         print(f"Datensatz erfolgreich in '{file_path}' gespeichert.")
 
@@ -47,8 +45,3 @@ def load_and_save_data(cache=True):
 
 
 if __name__ == "__main__":
-    # Beispielnutzung, wenn die Datei direkt ausgeführt wird
-    df_loaded = load_and_save_data()
-    if df_loaded is not None:
-        print("\nErste 5 Zeilen des geladenen Datensatzes:")
-        print(df_loaded.head())
