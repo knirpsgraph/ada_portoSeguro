@@ -2,46 +2,49 @@ import pandas as pd
 from sklearn.datasets import fetch_openml
 import os
 
-_df = None
+_cache = {}
 
 
-def load_and_save_data(cache=True):
-    global _df
+def load_and_save_data():
+    cache_key = 'porto_seguro_data'
 
-    data_dir = 'data/raw/'
+    # Prüfe, ob der Datensatz bereits im Cache
+    if cache_key in _cache:
+        print("Lade Datensatz aus dem Cache.")
+        return _cache[cache_key]
+        print("Datensatz erfolgreich geladen")
+
+    project_root = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+    data_dir = os.path.join(project_root, 'data', 'raw')
     file_path = os.path.join(data_dir, 'porto_seguro_safe_driver_prediction.csv')
 
-    if _df is not None and cache:
-        print("Lade Datensatz aus dem Cache.")
-        return _df
-
-    # Prüfen, ob die Datei bereits existiert
+    # Prüfe, ob die Datei bereits lokal vorhanden ist
     if os.path.exists(file_path):
-        print("Lade Datensatz von lokaler Datei...")
+        print("Lade Datensatz lokal...")
         df = pd.read_csv(file_path)
-        if cache:
-            _df = df
+        _cache[cache_key] = df
+        print("Datensatz erfolgreich geladen")
         return df
 
+
+    # Wenn die Datei nicht vorhanden ist, lade sie von OpenML herunter
     try:
-        print("Lade Datensatz von OpenML (ID: 42742)...")
+        print("Lade Datensatz von OpenML...")
         dataset = fetch_openml(data_id=42742, as_frame=True)
         df = dataset.frame
 
-        # Sicherstellen, dass das Verzeichnis existiert
         os.makedirs(data_dir, exist_ok=True)
-
         df.to_csv(file_path, index=False)
         print(f"Datensatz erfolgreich in '{file_path}' gespeichert.")
-
-        if cache:
-            _df = df
-
+        _cache[cache_key] = df
         return df
 
     except Exception as e:
-        print(f"Fehler beim Laden oder Speichern des Datensatzes: {e}")
+        print(f"Fehler beim Laden oder Speichern: {e}")
         return None
 
 
 if __name__ == "__main__":
+    df_loaded = load_and_save_data()
+    if df_loaded is not None:
+        print(df_loaded.head())
