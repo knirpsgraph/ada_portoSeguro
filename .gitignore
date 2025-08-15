@@ -20,4 +20,6 @@ data/
 *.model
 
 .DS_Store
-Thumbs.db
+Thumbs.dbreports/*
+!reports/selected_features_kagglepreset.csv
+!reports/kagglepreset_decision.json
