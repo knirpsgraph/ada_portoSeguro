@@ -1,0 +1,22 @@
+{
+  "random_state": 42,
+  "cv_splits": 3,
+  "C": 1.0,
+  "n_rows": 250000,
+  "sample_n": 250000,
+  "scores_path": "/Users/lucasbeseler/ada_portoSeguro/reports/feature_gate_scores.csv",
+  "features_path": "/Users/lucasbeseler/ada_portoSeguro/reports/features_selected.csv",
+  "chosen": {
+    "name": "drop_calc+opt+extras",
+    "drop_calc": true,
+    "extra_drop": [
+      "ps_ind_14",
+      "ps_car_10_cat"
+    ],
+    "add_extras": true,
+    "cv_auc": 0.6208877902384364,
+    "cv_pr_auc": 0.05996522703322593,
+    "holdout_auc": 0.6325275459864773,
+    "holdout_pr_auc": 0.06507222179331232
+  }
+}
