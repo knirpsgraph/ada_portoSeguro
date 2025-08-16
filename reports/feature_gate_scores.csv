@@ -1,5 +1,5 @@
-name,n_features,cv_auc,cv_pr_auc,drop_calc,extra_drop,add_extras
-drop_calc+opt+extras,37,0.6208877902384364,0.05996522703322593,True,"['ps_ind_14', 'ps_car_10_cat']",True
-drop_calc+extras,39,0.620863957814129,0.05996791250282117,True,[],True
-drop_calc_only,37,0.6207995685567904,0.05998588735230025,True,[],False
-all_features,57,0.6197754709254695,0.059834546148964066,False,[],False
+name,n_features,cv_auc,cv_pr_auc,drop_calc,extra_drop,add_extras,te_cat
+drop_calc+opt+extras,37,0.6208877902384364,0.05996522703322593,True,"['ps_ind_14', 'ps_car_10_cat']",True,False
+drop_calc+extras,39,0.620863957814129,0.05996791250282117,True,[],True,False
+drop_calc_only,37,0.6207995685567904,0.05998588735230025,True,[],False,False
+all_features,57,0.6197754709254695,0.059834546148964066,False,[],False,False
