@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="Theme, sowie data_loader zu EDA_integrated hinzugefügt. Leicht Anpassungen des Codes. Hinzufügen erweitertes Plotting. Teilweise ersetzen der Variablen">
+    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="Analyse kategoriale/binäre und kontinuierlicher features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/01_eda.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +90,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update README and gitignore" />
     <MESSAGE value="Theme, sowie data_loader zu EDA_integrated hinzugefügt. Leicht Anpassungen des Codes. Hinzufügen erweitertes Plotting. Teilweise ersetzen der Variablen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Theme, sowie data_loader zu EDA_integrated hinzugefügt. Leicht Anpassungen des Codes. Hinzufügen erweitertes Plotting. Teilweise ersetzen der Variablen" />
+    <MESSAGE value="Analyse kategoriale/binäre und kontinuierlicher features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Analyse kategoriale/binäre und kontinuierlicher features" />
   </component>
 </project>
