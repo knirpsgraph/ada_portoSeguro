@@ -2,25 +2,42 @@
   "random_state": 42,
   "cv_splits": 3,
   "C": 1.0,
-  "n_rows": 250000,
+  "n_rows_total": 595212,
   "sample_n": 250000,
-  "te_cat": false,
-  "gbm_check": false,
+  "te_cat": true,
+  "te_alpha": 10.0,
+  "gbm_check": true,
   "scores_path": "/Users/lucasbeseler/ada_portoSeguro/reports/feature_gate_scores.csv",
   "features_path": "/Users/lucasbeseler/ada_portoSeguro/reports/features_selected.csv",
-  "chosen": {
+  "split_indices_path": "/Users/lucasbeseler/ada_portoSeguro/reports/split_indices.json",
+  "pr_curve_path": "/Users/lucasbeseler/ada_portoSeguro/reports/holdout_pr_curve.png",
+  "best_by_cv": {
     "name": "drop_calc+opt+extras",
+    "n_features": 37,
+    "cv_auc": 0.6184223537516288,
+    "cv_pr_auc": 0.05880822058084326,
     "drop_calc": true,
     "extra_drop": [
       "ps_ind_14",
       "ps_car_10_cat"
     ],
     "add_extras": true,
-    "cv_auc": 0.6208877902384364,
-    "cv_pr_auc": 0.05996522703322593,
-    "holdout_auc": 0.6325275459864773,
-    "holdout_pr_auc": 0.06507222179331232,
-    "te_cat": false
+    "te_cat": true
   },
-  "gbm_holdout": null
+  "holdout_scores": {
+    "best_auc": 0.6310639020078359,
+    "best_pr_auc": 0.06332606977115596,
+    "all_auc": 0.625856737205308,
+    "all_pr_auc": 0.06240769919495529
+  },
+  "gbm_holdout": {
+    "best": [
+      0.6263003114281261,
+      0.06245714898985463
+    ],
+    "all": [
+      0.6226983607094368,
+      0.060808020280909716
+    ]
+  }
 }
