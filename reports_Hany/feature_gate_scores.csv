@@ -1,0 +1,17 @@
+model_name,config_name,n_features,cv_auc,cv_pr_auc,drop_calc,extra_drop,add_extras,te_cat
+LogisticRegression,drop_calc_only,37,0.6016829588079455,0.0571187177354171,True,[],False,True
+LogisticRegression,drop_calc+extras,39,0.600948254309224,0.05661068562919312,True,[],True,True
+LogisticRegression,drop_calc+opt+extras,37,0.6009172907476181,0.05660056089990233,True,"['ps_ind_14', 'ps_car_10_cat']",True,True
+LightGBM,drop_calc_only,37,0.5973797168294789,0.055368084160977396,True,[],False,True
+LightGBM,drop_calc+extras,39,0.5944435498837966,0.05322663182944464,True,[],True,True
+LogisticRegression,all_features,57,0.5942737787720926,0.05591498112383629,False,[],False,True
+LightGBM,drop_calc+opt+extras,37,0.593880695751056,0.055225516175884816,True,"['ps_ind_14', 'ps_car_10_cat']",True,True
+RandomForestClassifier,drop_calc_only,37,0.5919858280107745,0.050285371721107835,True,[],False,True
+RandomForestClassifier,drop_calc+extras,39,0.5861680312263794,0.050453964448647054,True,[],True,True
+RandomForestClassifier,drop_calc+opt+extras,37,0.5817164431188198,0.04919064552634038,True,"['ps_ind_14', 'ps_car_10_cat']",True,True
+LightGBM,all_features,57,0.581023124443767,0.05329839016016918,False,[],False,True
+RandomForestClassifier,all_features,57,0.5785110127442866,0.05109204117057287,False,[],False,True
+SVM,all_features,57,0.5272168406982282,0.04320155722171727,False,[],False,True
+SVM,drop_calc+opt+extras,37,0.5237283545081413,0.04389530076363902,True,"['ps_ind_14', 'ps_car_10_cat']",True,True
+SVM,drop_calc_only,37,0.5223727153738796,0.043096828370086236,True,[],False,True
+SVM,drop_calc+extras,39,0.5211186478110417,0.04323270074229549,True,[],True,True
