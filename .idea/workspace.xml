@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="EDA überarbeitung">
-      <change afterPath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" afterDir="false" />
+    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="SVM and Random Forest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +93,7 @@
     <MESSAGE value="Analyse kategoriale/binäre und kontinuierlicher features" />
     <MESSAGE value="init" />
     <MESSAGE value="EDA überarbeitung" />
-    <option name="LAST_COMMIT_MESSAGE" value="EDA überarbeitung" />
+    <MESSAGE value="SVM and Random Forest" />
+    <option name="LAST_COMMIT_MESSAGE" value="SVM and Random Forest" />
   </component>
 </project>

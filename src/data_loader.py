@@ -1,46 +1,56 @@
 import pandas as pd
 from sklearn.datasets import fetch_openml
 import os
+from pathlib import Path
 
 _cache = {}
 
 
 def load_and_save_data():
+    """
+    Loads the Porto Seguro dataset from a local cache if available,
+    otherwise fetches it from OpenML and saves it locally.
+    """
     cache_key = 'porto_seguro_data'
 
-    # Prüfe, ob der Datensatz bereits im Cache
+    # Check if the dataset is already in the in-memory cache
     if cache_key in _cache:
-        print("Lade Datensatz aus dem Cache.")
+        print("Loading dataset from in-memory cache.")
         return _cache[cache_key]
-        print("Datensatz erfolgreich geladen")
 
-    project_root = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
-    data_dir = os.path.join(project_root, 'data', 'raw')
-    file_path = os.path.join(data_dir, 'porto_seguro_safe_driver_prediction.csv')
+    # Determine project root and file path
+    # This assumes the script is in a standard project structure (e.g., in 'src' or root)
+    try:
+        project_root = Path(__file__).resolve().parents[1]
+    except NameError:
+        project_root = Path.cwd().parent if Path.cwd().name in ["notebooks", "src"] else Path.cwd()
 
-    # Prüfe, ob die Datei bereits lokal vorhanden ist
-    if os.path.exists(file_path):
-        print("Lade Datensatz lokal...")
+    data_dir = project_root / 'data' / 'raw'
+    file_path = data_dir / 'porto_seguro_safe_driver_prediction.csv'
+
+    # Check if the file already exists locally
+    if file_path.exists():
+        print(f"Loading dataset from local file: {file_path}")
         df = pd.read_csv(file_path)
         _cache[cache_key] = df
-        print("Datensatz erfolgreich geladen")
+        print("Dataset loaded successfully.")
         return df
 
-
-    # Wenn die Datei nicht vorhanden ist, lade sie von OpenML herunter
+    # If the file doesn't exist, download it from OpenML
     try:
-        print("Lade Datensatz von OpenML...")
-        dataset = fetch_openml(data_id=42742, as_frame=True)
+        print("Fetching dataset from OpenML...")
+        dataset = fetch_openml(data_id=42742, as_frame=True, parser='auto')
         df = dataset.frame
 
-        os.makedirs(data_dir, exist_ok=True)
+        # Create directory if it doesn't exist and save the file
+        data_dir.mkdir(parents=True, exist_ok=True)
         df.to_csv(file_path, index=False)
-        print(f"Datensatz erfolgreich in '{file_path}' gespeichert.")
+        print(f"Dataset successfully saved to '{file_path}'.")
         _cache[cache_key] = df
         return df
 
     except Exception as e:
-        print(f"Fehler beim Laden oder Speichern: {e}")
+        print(f"Error during download or saving: {e}")
         return None
 
 
