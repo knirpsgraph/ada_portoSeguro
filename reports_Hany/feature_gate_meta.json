@@ -1,0 +1,41 @@
+{
+  "random_state": 42,
+  "cv_splits": 2,
+  "C": 1.0,
+  "n_rows_total": 595212,
+  "sample_n": 50000,
+  "te_cat": true,
+  "te_alpha": 10.0,
+  "gbm_check": true,
+  "scores_path": "D:\\AdA_Project25\\158_portoSeguro\\reports_Hany\\feature_gate_scores.csv",
+  "features_path": "D:\\AdA_Project25\\158_portoSeguro\\reports_Hany\\features_selected.csv",
+  "split_indices_path": "D:\\AdA_Project25\\158_portoSeguro\\reports_Hany\\split_indices.json",
+  "pr_curve_path": "D:\\AdA_Project25\\158_portoSeguro\\reports_Hany\\holdout_pr_curve.png",
+  "best_by_cv": {
+    "model_name": "LogisticRegression",
+    "config_name": "drop_calc_only",
+    "n_features": 37,
+    "cv_auc": 0.6016829588079455,
+    "cv_pr_auc": 0.0571187177354171,
+    "drop_calc": true,
+    "extra_drop": [],
+    "add_extras": false,
+    "te_cat": true
+  },
+  "holdout_scores": {
+    "best_auc": 0.5920620606060606,
+    "best_pr_auc": 0.06126903504066674,
+    "all_auc": 0.5956493852813853,
+    "all_pr_auc": 0.0636463454091894
+  },
+  "gbm_holdout": {
+    "best": [
+      0.5606665974025974,
+      0.05213131870964434
+    ],
+    "all": [
+      0.5604892813852813,
+      0.04755308739059323
+    ]
+  }
+}

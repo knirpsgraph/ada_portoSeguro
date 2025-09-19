@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="init">
+    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="SVM and Random Forest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -90,6 +92,8 @@
     <MESSAGE value="Theme, sowie data_loader zu EDA_integrated hinzugefügt. Leicht Anpassungen des Codes. Hinzufügen erweitertes Plotting. Teilweise ersetzen der Variablen" />
     <MESSAGE value="Analyse kategoriale/binäre und kontinuierlicher features" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="EDA überarbeitung" />
+    <MESSAGE value="SVM and Random Forest" />
+    <option name="LAST_COMMIT_MESSAGE" value="SVM and Random Forest" />
   </component>
 </project>
