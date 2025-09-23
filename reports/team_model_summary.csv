@@ -1,0 +1,2 @@
+member,model_name,encoder,split_path,feature_recipe,seed,cv_folds,hold_auc,hold_ap,hold_brier,cv_auc_mean,cv_ap_mean,early_stopping,best_iteration,n_trees,fit_time_s,predict_time_ms_per_1k,params_json
+Charlotte,NN_embedded,OneHotEncoder and Embeddings for large categories,split_indices.json,selected_from_feature_gate,42,5,0.6376924542748025,0.06627055303391008,0.03488942580616414,0.6253706940104031,0.06155676580775572,True,3,"(10, 'Epochs')",1612.5414301999845,795.523300068453,
