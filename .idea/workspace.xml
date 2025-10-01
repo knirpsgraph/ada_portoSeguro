@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="SVM and Random Forest">
+    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="Reports hany">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/feature_gate_meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/feature_gate_scores.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/features_selected.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/holdout_pr_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/split_indices.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +50,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\AdA_Project25\158_portoSeguro\data" />
@@ -94,6 +99,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="EDA überarbeitung" />
     <MESSAGE value="SVM and Random Forest" />
-    <option name="LAST_COMMIT_MESSAGE" value="SVM and Random Forest" />
+    <MESSAGE value="Run SVM and Random Forest" />
+    <MESSAGE value="Reports hany" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reports hany" />
   </component>
 </project>
