@@ -12,3 +12,7 @@ dependencies:
   - ipykernel
   - missingno
   - lightgbm
+  - xgboost
+  - tensorflow
+  - scikeras
+  - category_encoders

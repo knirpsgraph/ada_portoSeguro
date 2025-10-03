@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="Reports hany">
+    <list default="true" id="0dc22309-cc1f-4794-aba2-8acfbd0faaaf" name="Changes" comment="Reports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA_integrated.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/07_model_Hany_SVM_RandomForest.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports_Hany/feature_gate_meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports_Hany/feature_gate_scores.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports_Hany/features_selected.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports_Hany/holdout_pr_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports_Hany/split_indices.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/05_model_comparison.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/07_model_Hany_RandomForest.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/07_model_Hany_RandomForest.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/07a_model_Hany_SVM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/07a_model_Hany_SVM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/LinearSVC_Nystroem/plot_pr_baseline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/plot_calibration_rf_baseline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/plot_calibration_rf_tuned.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/plot_fi_top20_rf_baseline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/plot_fi_top20_rf_tuned.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/plot_pr_rf_baseline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports_Hany/plot_pr_rf_tuned.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/preprocessor.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +62,17 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/AdA_Project25/158_portoSeguro/reports_Hany/SVM",
     "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AdA_Project25\158_portoSeguro\reports_Hany\SVM" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\AdA_Project25\158_portoSeguro\data" />
     </key>
@@ -101,6 +114,8 @@
     <MESSAGE value="SVM and Random Forest" />
     <MESSAGE value="Run SVM and Random Forest" />
     <MESSAGE value="Reports hany" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reports hany" />
+    <MESSAGE value="Random Forest SVM Hany" />
+    <MESSAGE value="Reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reports" />
   </component>
 </project>

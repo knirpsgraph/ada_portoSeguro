@@ -5,3 +5,8 @@ scikit-learn
 notebook
 ipykernel
 missingno
+lightgbm
+xgboost
+tensorflow
+scikeras
+category_encoders
