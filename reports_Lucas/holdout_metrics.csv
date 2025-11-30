@@ -1,2 +1,2 @@
-model,params,pr_auc,roc_auc,brier
-lgbm,"{""learning_rate"": 0.03, ""num_leaves"": 237, ""max_depth"": 3, ""min_child_samples"": 15, ""subsample"": 0.7568414077252856, ""colsample_bytree"": 0.7389764516006414, ""reg_lambda"": 0.9514098524518675, ""reg_alpha"": 0.2269093490508841, ""is_unbalance"": false, ""max_bin"": 511, ""feature_pre_filter"": false}",0.06642513883705534,0.6322007531965441,0.0348797748036752
+pr_auc,roc_auc,brier
+0.06347225213888757,0.6242823387099896,0.03493506269867367
