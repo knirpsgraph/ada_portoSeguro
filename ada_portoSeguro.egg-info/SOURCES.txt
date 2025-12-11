@@ -1,5 +1,0 @@
-setup.py
-ada_portoSeguro.egg-info/PKG-INFO
-ada_portoSeguro.egg-info/SOURCES.txt
-ada_portoSeguro.egg-info/dependency_links.txt
-ada_portoSeguro.egg-info/top_level.txt
